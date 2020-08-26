@@ -1,0 +1,15 @@
+﻿<h1>Index</h1>
+
+@model List<Movie>
+
+@foreach(Movie m in Model)
+{
+    <ul>
+        <li>Title:@m.Title</li>
+        <li>Genre:@m.Genre</li>
+        <li>Runtime:@m.Runtime</li>
+        <li><a href="../Movies/DeleteMovie?id=@m.Id">Delete movie</a></li>
+    </ul>
+}
+
+
